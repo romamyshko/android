@@ -53,7 +53,7 @@
         android:id="@+id/button15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bottom"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="Bottom" />
 </RelativeLayout>

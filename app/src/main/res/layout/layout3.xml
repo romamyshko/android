@@ -15,5 +15,5 @@
         android:text="Button"
         android:theme="@style/Theme.SpecificButton"
         app:strokeColor="@color/green"
-        app:strokeWidth="8dp"/>
+        app:strokeWidth="8dp" />
 </RelativeLayout>
