@@ -2,8 +2,10 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +18,26 @@ public class MainActivity extends AppCompatActivity {
         final Resources.Theme theme = getTheme();
         button.setOnClickListener(view -> button.setBackgroundColor(getResources().getColor(R.color.green, theme)));
 
+        Button btn1 = (Button) findViewById(R.id.button4);
+        btn1.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
+
+        Button btn2 = (Button) findViewById(R.id.button1);
+        btn2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),FirstActivity.class);
+                startActivity(i);
+
+            }
+        });
     }
 }
 
